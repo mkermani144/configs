@@ -1,4 +1,0 @@
-interface:
-  display_name: "Rust Hexarch"
-  short_description: "Help with Rust Hexarch tasks"
-  default_prompt: "Use $rust-hexarch to refactor this Rust use-case into clear domain ports, adapters, and service boundaries."
