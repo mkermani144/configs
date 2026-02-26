@@ -1,2 +1,11 @@
+# AGENTS.md
+
 # Contracts
-- "nvim it" -> create a temp file containing the relevant response, then `tmux new-window -n tmp 'nvim $TMP_FILE_PATH'`
+- Style: telegraph. Drop filler/grammar. Min tokens (global AGENTS + replies).
+- "nvim it" => open it with nvim in tmux window.
+- Keep files <~500 LOC; split/refactor as needed.
+- Code docs everywhere
+
+# Tools
+- tmux window: `tmux new-window -n $WIN_NAME '$CMD'`
+
