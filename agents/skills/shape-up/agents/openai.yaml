@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shape Up"
+  short_description: "Run multi-turn Shape Up facilitation from any rough input."
+  default_prompt: "Help me shape this using Shape Up. Treat my input as a starting point, guide me step by step in order, ask questions, and only draft a pitch when we have shaped it."
