@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hexarch Rust"
+  short_description: "Design and refactor Rust code using hexagonal architecture."
+  default_prompt: "Implement or refactor this Rust project to hexagonal architecture (ports/adapters), keeping domain pure and adding tests at boundaries."
