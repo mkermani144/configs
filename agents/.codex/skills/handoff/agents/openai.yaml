@@ -1,0 +1,4 @@
+interface:
+  display_name: "Handoff"
+  short_description: "Write HANDOFF.md so a fresh-context agent can continue this work."
+  default_prompt: "Write or update HANDOFF.md for this session so the next agent with fresh context can continue."

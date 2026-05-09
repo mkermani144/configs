@@ -21,6 +21,8 @@ The `agents` group ships both Codex and Claude assets in one tree:
 - `agents/.codex/skills/`   → `~/.codex/skills/`
 - `agents/.claude/CLAUDE.md` → `~/.claude/CLAUDE.md` (symlinked to
   `AGENTS.md` inside the repo, single source of truth)
+- `agents/.claude/skills/`  → `~/.claude/skills/` (individual skills are
+  in-repo symlinks back to `.codex/skills/<name>`, single source of truth)
 
 ## Adopting existing files
 
