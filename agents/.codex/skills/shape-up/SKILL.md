@@ -86,7 +86,7 @@ Advance only when current step has enough user judgment. Later-stage info given 
 - **Acceptance**: commands/tests AI runs to confirm done
 - **Known traps / rabbit holes**: with patch/cut/spike decision
 - **No-gos**: explicit out-of-scope
-- **Commit discipline**: one commit per meaningful increment, commit often, no big commits. Never touch changes not made by this run. Skip if user said no-commit.
+- **Commit discipline**: commit incrementally. Separate commit for each meaningful piece of work as it lands. Commit often, no big batched commits, no leaving everything unstaged at end. Never touch changes not made by this run. Do not commit GOAL.md unless asked. Only skip committing entirely if user explicitly said no-commit.
 - **Handoff**: HANDOFF.md via [[handoff]] skill only if even wrap-up scope cannot ship. Default expectation: wrap up and ship, do not hand off.
 
 ## Complete GOAL.md Input

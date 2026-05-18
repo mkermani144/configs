@@ -45,7 +45,7 @@ Sections (drop any not relevant):
 - **Approach**: hints; AI decides impl details not stated
 - **Acceptance**: how AI verifies done (test, command, output shape)
 - **No-gos**: explicit out-of-scope
-- **Commit discipline**: one commit per meaningful increment, never touch foreign changes, no GOAL.md commit unless asked
+- **Commit discipline**: commit incrementally. Separate commit per meaningful piece of work as it lands. Commit often, no big batched commits, no piling up unstaged. Never touch foreign changes. Do not commit GOAL.md unless asked. Only skip committing entirely if user explicitly said no-commit.
 
 No time budget. No wrap-up rule. No breadboard requirement. No dedicated risks section. AI agent uses judgment on impl tradeoffs.
 
