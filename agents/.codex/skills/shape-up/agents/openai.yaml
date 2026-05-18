@@ -1,4 +1,4 @@
 interface:
   display_name: "Shape Up"
-  short_description: "Run multi-turn Shape Up facilitation from any rough input."
-  default_prompt: "Help me shape this using Shape Up. Treat my input as a starting point, guide me step by step in order, ask questions, and only draft a pitch when we have shaped it."
+  short_description: "Multi-turn Shape Up facilitation. Output: GOAL.md at repo root for AI agent execution."
+  default_prompt: "Help me shape this using Shape Up. Treat my input as starting point. Guide me step by step, ask questions, and only generate GOAL.md when we have shaped it. I am product owner; downstream AI agent will execute GOAL.md without me."
