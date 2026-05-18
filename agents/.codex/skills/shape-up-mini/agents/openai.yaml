@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shape Up Mini"
+  short_description: "Lightweight Shape Up for small features. 5-10 turns, GOAL.md output."
+  default_prompt: "Help me shape this quickly. Small or low-stakes feature. Ask only what's needed (5-10 turns max, fewer better), let AI decide impl details, then write GOAL.md to repo root."
