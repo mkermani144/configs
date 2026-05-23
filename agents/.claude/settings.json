@@ -1,9 +1,9 @@
 {
   "permissions": {
-    "defaultMode": "acceptEdits",
     "allow": [
       "WebSearch"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "model": "opus",
   "enabledPlugins": {
@@ -60,12 +60,13 @@
     },
     "mode": "auto-allow"
   },
-  "effortLevel": "xhigh",
+  "effortLevel": "high",
   "voice": {
     "enabled": true,
     "mode": "hold"
   },
   "editorMode": "vim",
   "agentPushNotifEnabled": true,
-  "voiceEnabled": true
+  "voiceEnabled": true,
+  "skipAutoPermissionPrompt": true
 }
