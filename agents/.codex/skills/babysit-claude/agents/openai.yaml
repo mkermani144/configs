@@ -1,4 +1,0 @@
-interface:
-  display_name: "Babysit Claude"
-  short_description: "Spawn Claude in tmux pane, supervise until goal done."
-  default_prompt: "Spawn `claude` in a right tmux split with the goal, then poll every 2 minutes and approve safe permission prompts until done."
