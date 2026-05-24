@@ -6,4 +6,5 @@
 - code docs everywhere
 - cap answers 25 lines; larger => compact
 - commit early and often per work chunk; no enormous commit
+- don't commit GOAL files
 
