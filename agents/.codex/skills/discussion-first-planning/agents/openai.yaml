@@ -1,4 +1,4 @@
 interface:
-  display_name: "Discussion-First Planning"
-  short_description: "Align first, then write repo-conventional goal/spec artifacts split into runnable slices."
-  default_prompt: "Help me plan this discussion-first. Ask for decisions that affect scope or acceptance, split broad work into runnable slices, then write a repo-conventional goal/spec only after I confirm."
+  display_name: "Goal From Conversation"
+  short_description: "Turn natural planning conversation into detailed repo-conventional goals for coding agents."
+  default_prompt: "Use our conversation as source material. When I ask for a goal/spec, write a detailed repo-conventional artifact with architecture, implementation, tests, acceptance, risks, and slice splitting if needed."

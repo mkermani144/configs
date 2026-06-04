@@ -1,67 +1,30 @@
 ---
 name: discussion-first-planning
-description: Use when user asks to plan, shape, write a goal/spec, break down work, go one by one, or turn a rough idea into executable agent work. Discussion-first workflow: align before writing, split broad work into runnable slices, respect repo-local artifact conventions, and avoid giant one-shot plans.
+description: Use when user asks to turn an existing conversation, notes, images, or rough idea into a goal/spec for another coding agent. Preserve natural conversation style, then generate a detailed executable goal with architecture and implementation guidance when requested.
 metadata:
   short-description: Discussion-first planning and goal slicing
 ---
 
-# Discussion-First Planning
+# Goal From Conversation
 
-Use for planning that must become useful execution input, not abstract strategy.
+Use when conversation should become executable agent work.
 
-## Core Rules
-
-- Discuss before writing artifacts. Do not generate a full plan from a rough prompt.
-- Keep user in product/intent seat. Ask only for decisions that change scope, behavior, or acceptance.
-- Prefer repo-local conventions for artifact path/name. If unknown, inspect first.
-- If no convention exists, write goals under `goals/<descriptive-name>.md`.
-- Do not include appetite/time-budget unless user asks.
+## Rules
+- Do not force a Q&A template. Let normal conversation, images, and notes accumulate.
+- Write a goal/spec only when user asks or clearly confirms.
+- Prefer repo artifact conventions; inspect if unknown. If absent, use `goals/<descriptive-name>.md`.
+- Do not include appetite/time budget unless user asks.
 - Do not commit goal/spec/plan artifacts unless user asks.
 
-## Workflow
+## Goal Quality
+- Goal should be detailed enough for a fresh coding agent with no chat context.
+- Include implementation placement, key files, data flow, tests, acceptance, risks, no-gos, and commit-often policy.
+- For most implementation work, tell executing agent to use the hex architecture skill.
+- Typical goal size is ~200-400 lines. If far shorter, add missing details. If far longer, split.
 
-1. Restate current understanding in 3-6 bullets.
-2. Name the next decision needed.
-3. Ask 1-3 questions, then wait.
-4. When scope is broad, split into runnable slices before writing.
-5. Before file creation, show proposed artifact path(s) and slice list.
-6. Write only after user confirms.
+## Splitting
+- If scope is broad, write an index plus smaller runnable slice files.
+- Each slice should be executable by one agent, independently verifiable, reviewable, and named by behavior/outcome.
 
-## Slice Rules
-
-Each slice should be:
-- executable by one agent without hidden context
-- independently verifiable
-- small enough to review
-- named by behavior/outcome, not implementation trivia
-
-Use one index plus slice files when shared decisions span multiple chunks.
-
-## Artifact Shape
-
-Use only sections that fit the task:
-- Context
-- Decisions
-- Files in scope
-- Do not touch
-- Approach
-- Slices
-- Acceptance
-- Risks / traps
-- No-gos
-- Commit discipline
-
-## Stop Conditions
-
-Stop and ask when:
-- acceptance is not observable
-- target files/modules are guessed
-- user intent conflicts with repo state
-- requested scope becomes multiple unrelated projects
-
-## Output Style
-
-Keep chat terse:
-- `Have:` known facts
-- `Need:` next decision
-- `Ask:` question(s)
+## Ask Only When Needed
+Ask when acceptance is not observable, target paths are guessed, architecture boundary is unclear, or user intent conflicts with repo state.
