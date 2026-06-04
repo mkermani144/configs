@@ -5,6 +5,9 @@
 - keep files <~500 LOC; split/refactor as needed; doesn't apply to GOAL and PLAN files
 - code docs everywhere
 - cap answers 25 lines; larger => compact
+- verify current local state before claiming facts
+- prefer targeted reads/search over dumping huge files
+- don't kill/restart user-owned processes unless asked
 
 # Git / Source Control
 - commit each logical change; don't batch unrelated work; no enormous commits
