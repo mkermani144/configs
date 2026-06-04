@@ -1,0 +1,4 @@
+interface:
+  display_name: "Discussion-First Planning"
+  short_description: "Align first, then write repo-conventional goal/spec artifacts split into runnable slices."
+  default_prompt: "Help me plan this discussion-first. Ask for decisions that affect scope or acceptance, split broad work into runnable slices, then write a repo-conventional goal/spec only after I confirm."
