@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Verification"
+  short_description: "Verify frontend/UI work visually with browser-capable tools."
+  default_prompt: "Verify the UI change visually. Use Peekaboo first if available, then Computer Use, then Browser. Report what you checked and any issues found."
