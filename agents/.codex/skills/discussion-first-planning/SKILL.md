@@ -1,12 +1,11 @@
 ---
 name: discussion-first-planning
-description: Use when user asks to turn an existing conversation, notes, images, or rough idea into a goal/spec for another coding agent. Preserve natural conversation style, then generate a detailed executable goal with architecture and implementation guidance when requested.
+description: Use when user mentions setting a goal, defining a goal, extracting into goals, writing a goal, or turning conversation, notes, images, or rough ideas into executable goal/spec files for coding agents.
 metadata:
   short-description: Discussion-first planning and goal slicing
 ---
 
-# Goal From Conversation
-Use when conversation should become executable agent work.
+# Discussion First Planning
 
 ## Rules
 - Do not force a Q&A template. Let normal conversation, images, and notes accumulate.
@@ -19,6 +18,7 @@ Use when conversation should become executable agent work.
 
 ## Goal Quality
 - Goal should be detailed enough for a fresh coding agent with no chat context.
+- A goal is valid only with clear Validation / Acceptance Criteria; if expected output or success criteria are even slightly unclear, ask first.
 - For most implementation work, tell executing agent to use the hex architecture skill.
 - Typical goal size is ~200-400 lines. If far shorter, add missing details. If far longer, split.
 

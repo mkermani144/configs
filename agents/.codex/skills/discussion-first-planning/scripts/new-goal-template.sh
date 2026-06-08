@@ -30,8 +30,8 @@ render_template() {
 ## Tests
 <!-- Fill with unit/integration/UI/manual checks and exact commands. -->
 
-## Acceptance
-<!-- Fill with observable pass/fail criteria. -->
+## Validation / Acceptance Criteria
+<!-- Fill with observable pass/fail criteria that prove the goal is achieved. -->
 
 ## Risks
 <!-- Fill with likely regressions, migration hazards, and verification gaps. -->
