@@ -31,7 +31,10 @@ render_template() {
 <!-- Fill with unit/integration/UI/manual checks and exact commands. -->
 
 ## Validation / Acceptance Criteria
-<!-- Fill with observable pass/fail criteria that prove the goal is achieved. -->
+- \`<Persona>\` can \`<Action>\` so that \`<Result>\`.
+- Criteria describe concept, function, and end-user benefit first.
+- Implementation-detail criteria are allowed only when needed for user-visible proof.
+- If validation criteria are not 100% clear, ask the user to clarify before writing.
 
 ## Risks
 <!-- Fill with likely regressions, migration hazards, and verification gaps. -->

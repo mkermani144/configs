@@ -18,13 +18,13 @@ metadata:
 
 ## Goal Quality
 - Goal should be detailed enough for a fresh coding agent with no chat context.
-- A goal is valid only with clear Validation / Acceptance Criteria; if expected output or success criteria are even slightly unclear, ask first.
-- For most implementation work, tell executing agent to use the hex architecture skill.
-- Typical goal size is ~200-400 lines. If far shorter, add missing details. If far longer, split.
+- Tell implementation agents to use hex architecture skill when relevant; typical goal size is ~200-400 lines, else add detail or split.
+
+## Acceptance Criteria
+- Reserve a full section in every goal.
+- Center end-user benefit: "<Persona> can <Action> so that <Result>".
+- Avoid implementation-detail criteria unless needed for user-visible proof.
+- If not 100% sure validation criteria are correct, ask user to clarify before writing.
 
 ## Splitting
-- If broad scope yields multiple goal files, put them under `goals/<topic>/` with an index plus runnable slice files.
-- Each slice should be executable by one agent, independently verifiable, reviewable, and named by behavior/outcome.
-
-## Ask Only When Needed
-Ask only when acceptance, paths, architecture boundary, or repo/user intent conflict is unclear.
+- If broad scope yields multiple goal files, use `goals/<topic>/` with an index plus runnable, independently verifiable slices.

@@ -1,4 +1,4 @@
 interface:
   display_name: "Discussion First Planning"
   short_description: "Turn natural planning conversation into detailed repo-conventional goals for coding agents."
-  default_prompt: "Use our conversation as source material. When I ask to set, define, write, or extract a goal/spec, write a detailed repo-conventional artifact with architecture, implementation, tests, validation criteria, risks, and slice splitting if needed."
+  default_prompt: "Use our conversation as source material. When I ask to set, define, write, or extract a goal/spec, write a detailed repo-conventional artifact with architecture, implementation, tests, user-benefit validation criteria, risks, and slice splitting if needed."
