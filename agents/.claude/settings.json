@@ -65,7 +65,6 @@
     "enabled": true,
     "mode": "hold"
   },
-  "editorMode": "vim",
   "agentPushNotifEnabled": true,
   "voiceEnabled": true,
   "skipAutoPermissionPrompt": true,
