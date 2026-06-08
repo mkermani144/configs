@@ -12,7 +12,7 @@ Use when conversation should become executable agent work.
 ## Rules
 - Do not force a Q&A template. Let normal conversation, images, and notes accumulate.
 - Write a goal/spec only when user asks or clearly confirms.
-- Prefer repo artifact conventions; inspect if unknown. If absent, use `goals/<descriptive-name>.md`.
+- Prefer repo artifact conventions; inspect if unknown. If absent, use `goals/<name>.md`.
 - Do not include appetite/time budget unless user asks.
 - Do not commit goal/spec/plan artifacts unless user asks.
 
@@ -23,7 +23,7 @@ Use when conversation should become executable agent work.
 - Typical goal size is ~200-400 lines. If far shorter, add missing details. If far longer, split.
 
 ## Splitting
-- If scope is broad, write an index plus smaller runnable slice files.
+- If broad scope yields multiple goal files, put them under `goals/<topic>/` with an index plus runnable slice files.
 - Each slice should be executable by one agent, independently verifiable, reviewable, and named by behavior/outcome.
 
 ## Ask Only When Needed
